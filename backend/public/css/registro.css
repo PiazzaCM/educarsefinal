@@ -1,0 +1,110 @@
+#nav {
+  background-color: white !important;
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+  padding-right: 5%;
+}
+
+.bg-FF4000 {
+  background-color: #FF4000;
+}
+
+
+.input-wrapper {
+  position: relative;
+  width: 271px;
+}
+
+.input {
+  padding: 15px 15px 15px 35px;
+  width: 100%;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input-icon {
+  color: #777777;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+#search-container input {
+  width: 100%;
+  border-radius: 0;
+  border-bottom: 0px rgb(161, 161, 161) solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+@media (min-width: 991px) {
+  #mas-dropdown {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  #mas-dropdown-navbar {
+    display: none;
+  }
+}
+
+
+.registro-container {
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+
+.custom-btn {
+  background-color: #FF4000;
+  border-color: #FF4000;
+}
+
+.header {
+  background-color: #FF4000;
+  height: 50px;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 3px;
+}
+
+
+.form-container {
+    margin-top: 100px;
+  }
+
+  .button-area .btn {
+    border-radius: 20px !important;
+  }
+
+  .button-area .btn:hover {
+    border-radius: 20px !important;
+  }
+
+  .button-area .btn-primary {
+    background-color: #FF4000;
+    border-color: #FF4000;
+  }
+
+  .button-area .btn-primary:hover {
+    background-color: #d13e0d;
+    border-color: #d13e0d;
+  }
+
+  body {
+    background-color: rgb(235, 235, 235);
+  }

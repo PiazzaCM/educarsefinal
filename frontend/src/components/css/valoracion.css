@@ -1,0 +1,51 @@
+#valoracion section {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  #valoracion .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+
+  #valoracion h2 {
+      background-color:  #FF4000;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      color: #ffffff;
+  }
+
+  #valoracion p {
+    color: #2c2c2c;
+  }
+
+  #valoracion .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  #valoracion .subrayado {
+      text-decoration: underline;
+  }
+  #valoracion .negrita {
+      font-weight: bold;
+  }
+
+  #valoracion .footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #777777;
+  }

@@ -1,0 +1,12 @@
+.customBtn {
+    background-color: #FF4000;
+    border-color: #FF4000;
+}
+
+.btn-primary:hover {
+    background-color: #963e12;
+    border-color: #963e12;
+}
+ #imagenModal {
+    max-width: 100%;
+ }

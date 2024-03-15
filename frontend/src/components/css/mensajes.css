@@ -1,0 +1,13 @@
+.container-chat {
+   background-color: rgb(255, 255, 255);
+    height: 80vh;
+    width: 100%;
+
+}
+
+.boton2 {
+    color: white;
+    background-color: #FF4000;
+    border-radius: 10px;
+}
+

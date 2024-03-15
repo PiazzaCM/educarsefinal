@@ -1,0 +1,75 @@
+.card {
+    transition: all 300ms ease;    
+}
+
+.card:hover {
+    cursor: pointer;
+    color: #FF4000;
+    border: 1px solid #FF4000;
+    transform: translateY(-5px);
+}
+
+.custom-btn {
+    background-color: #FF4000;
+    border-color: #FF4000;
+}
+
+.borde {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    width: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    margin-right: 1.5%;
+}
+
+#imagenModal {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.496);
+}
+
+.borde-desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    width: 710px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    margin-right: 1.5%;
+}
+
+
+.leaflet-container {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    height: 26vh;
+    width: auto;
+}
+
+.map-create .leaflet-container {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    height: 32vh;
+    width: auto;
+}
+
+.leaflet-control-attribution {
+    display: none;
+}
+
+.posteos {
+    height: 50vh;
+}
+
+.contenido {
+    min-height: 50vh;
+}

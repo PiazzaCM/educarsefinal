@@ -1,0 +1,101 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="col-2">
+            <img src="/img/icon.png" width="60px">
+            <a href="/view/" class="text-decoration-none text-dark ">
+                <strong class="align-content-lg-center">educARse</strong></a>
+        </div>
+
+
+        <div class="dropdown" id="mas-dropdown-navbar">
+            <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <strong>MÁS</strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-light text-small shadow" id="profile-dropdown">
+                <li><a class="dropdown-item" href="#">Explorar</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Ayuda</a></li>
+            </ul>
+        </div>
+
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <form class="d-flex" id="search-container">
+                <div class="input-wrapper">
+                    <input type="search" class="input" placeholder="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </form>
+
+
+            <div class="dropdown" id="mas-dropdown">
+                <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <strong>MÁS</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-light text-small shadow" id="profile-dropdown">
+                    <li><a class="dropdown-item" href="/explorar">Explorar</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Ayuda</a></li>
+                </ul>
+            </div>
+            
+
+            <div id="body">
+            </div>
+
+        </div>
+    </div>
+</nav>
+<script>
+
+    const cerrarSesion =()=>{
+        localStorage.removeItem('logged');
+        return location.href = '/login'
+    }
+
+    let userData = JSON.parse(localStorage.getItem('logged'));
+
+    const url = window.location.pathname;
+    console.log(url);
+
+    if(userData){
+        if(userData.isLogged){
+            document.getElementById('body').innerHTML = `<p onClick="cerrarSesion()"">Hola, ${userData.name} !</p>`
+            console.log('logged');
+        } 
+    } else document.getElementById('body').innerHTML = `<div class="button-area">
+                ${url !== '/view/login' ? '<a href="/view/login" class="btn btn-secondary">Inicar sesion</a>'  : ''}
+                ${url !== '/view/register' ? '<a href="/view/register" class="btn btn-primary">Registrate</a>' : ''}
+            </div>`
+
+    
+
+</script>
